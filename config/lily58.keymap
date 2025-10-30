@@ -85,7 +85,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans                    &trans    &trans          &trans        &trans          &trans           &kp DEL
 &trans      &trans        &trans        &trans        &trans  &trans                    &trans    &trans          &trans        &trans          &trans           &trans
-&trans      &trans        &trans        &trans        &trans  &trans                    &trans    &trans          &trans        &trans          &trans           &trans
+&trans      &trans        &trans        &trans        &trans  &trans                    &trans    &trans          &trans        &trans          &trans           &kp PRINTSCREEN
 &trans      &trans        &trans        &trans        &trans  &trans  &trans    &trans  &kp HOME  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
                                         &kp LCTRL     &trans  &trans  &trans    &trans  &trans    &trans          &trans
             >;
