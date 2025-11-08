@@ -74,11 +74,11 @@
 
         layer_2 {
             bindings = <
-&kp PAUSE_BREAK  &trans  &trans  &trans  &trans         &trans                                                                   &trans      &kp INSERT  &trans          &kp PAGE_UP      &trans         &trans
-&trans           &trans  &trans  &trans  &trans         &trans                                                                   &trans      &kp DELETE  &trans          &kp PAGE_DOWN    &trans         &trans
-&trans           &trans  &trans  &trans  &trans         &trans                                                                   &trans      &kp HOME    &kp UP_ARROW    &kp END          &trans         &kp PRINTSCREEN
-&trans           &trans  &trans  &trans  &trans         &trans     &mt LEFT_BRACE LEFT_BRACKET    &mt RIGHT_BRACE RIGHT_BRACKET  &trans      &kp DOWN    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH  &trans
-                                 &trans  &kp RIGHT_ALT  &kp LCTRL  &trans                         &trans                         &kp DELETE  &trans      &trans
+&kp PAUSE_BREAK  &trans  &trans  &trans  &trans         &trans                                                                   &trans      &kp INSERT      &trans          &kp PAGE_UP      &trans         &trans
+&trans           &trans  &trans  &trans  &trans         &trans                                                                   &trans      &kp DELETE      &trans          &kp PAGE_DOWN    &trans         &trans
+&trans           &trans  &trans  &trans  &trans         &trans                                                                   &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans         &kp PRINTSCREEN
+&trans           &trans  &trans  &trans  &trans         &trans     &mt LEFT_BRACE LEFT_BRACKET    &mt RIGHT_BRACE RIGHT_BRACKET  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH  &trans
+                                 &trans  &kp RIGHT_ALT  &kp LCTRL  &trans                         &trans                         &kp DELETE  &trans          &trans
             >;
         };
 
