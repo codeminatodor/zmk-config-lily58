@@ -51,7 +51,7 @@
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O    &kp P      &kp MINUS
 &kp LS(LCTRL)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp K           &kp L    &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M               &kp COMMA       &kp DOT  &kp SLASH  &kp GRAVE
-                               &mo 4   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 5 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 6 LEFT_WIN
+                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 2 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 3 LEFT_WIN
             >;
         };
 
@@ -77,11 +77,21 @@
 
         power {
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                     &trans  &trans  &trans  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG
+&bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                     &to 4   &trans  &trans  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG
 &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                    &trans  &trans  &trans  &out OUT_USB       &out OUT_BLE      &out OUT_TOG
 &trans          &trans         &trans         &trans         &trans         &trans                           &trans  &trans  &trans  &trans             &trans            &kp C_VOLUME_UP
 &trans          &trans         &trans         &trans         &trans         &trans         &trans    &trans  &trans  &trans  &trans  &trans             &trans            &kp C_VOLUME_DOWN
                                               &trans         &trans         &trans         &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&kp ESCAPE     &kp N1  &kp N2  &kp N3  &kp N4          &kp N5                                            &to 0          &kp G               &kp N8          &kp N9           &kp N0     &kp EQUAL
+&kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O            &kp P      &kp MINUS
+&kp LS(LCTRL)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp UP_ARROW    &kp L            &kp SEMI   &kp SQT
+&kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SLASH  &kp GRAVE
+                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 3 LEFT_WIN
             >;
         };
 
@@ -98,7 +108,7 @@
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                               &kp Y         &kp U     &kp I      &kp O    &kp P     &kp MINUS
 &kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                               &kp H         &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B        &kp LBKT     &kp RBKT  &kp N         &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                           &kp LALT  &kp LGUI  &lt 5 GRAVE  &kp SPACE    &kp RET   &lt 6 DELETE  &kp BSPC  &kp RGUI
+                           &kp LALT  &kp LGUI  &lt 6 GRAVE  &kp SPACE    &kp RET   &lt 7 DELETE  &kp BSPC  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
