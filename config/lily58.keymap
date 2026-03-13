@@ -14,6 +14,7 @@
     combos { compatible = "zmk,combos"; };
 
     behaviors {
+
         ss_hs_modmorph: ss_hs_modmorph {
             compatible = "zmk,behavior-mod-morph";
             label = "SS_HS_MODMORPH";
@@ -40,6 +41,19 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        laquo: laquo {
+            compatible = "zmk,behavior-unicode";
+            label = "LAQUO";
+            #binding-cells = <1>;
+        };
+
+        raquo: raquo {
+                compatible = "zmk,behavior-unicode";
+                label = "RAQUO";
+                #binding-cells = <1>;
+        };
+
     };
 
     keymap {
