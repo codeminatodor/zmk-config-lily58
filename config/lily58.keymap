@@ -42,6 +42,28 @@
         };
     };
 
+    macros {
+        laquo: laquo {
+            compatible = "zmk,behavior-macro";
+            label = "LAQUO";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
+                <&macro_release &kp LALT>;
+        };
+
+        raquo: raquo {
+            compatible = "zmk,behavior-macro";
+            label = "RAQUO";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
+                <&macro_release &kp LALT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
