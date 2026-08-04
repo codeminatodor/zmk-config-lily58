@@ -79,7 +79,7 @@
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O    &kp P      &kp MINUS
 &kp LG(SPACE)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp K           &kp L    &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M               &kp COMMA       &kp DOT  &kp SLASH  &kp GRAVE
-                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 3 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 3 LEFT_WIN
+                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 2 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 3 LEFT_WIN
             >;
         };
 
