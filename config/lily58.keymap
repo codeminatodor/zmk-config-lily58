@@ -79,7 +79,7 @@
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O    &kp P      &kp MINUS
 &kp LG(SPACE)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp K           &kp L    &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M               &kp COMMA       &kp DOT  &kp SLASH  &kp GRAVE
-                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 2 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 3 LEFT_WIN
+                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 3 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 3 LEFT_WIN
             >;
         };
 
@@ -119,7 +119,7 @@
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O            &kp P      &kp MINUS
 &kp LS(LCTRL)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp UP_ARROW    &kp L            &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SLASH  &kp GRAVE
-                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 0
+                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 0
             >;
         };
 
@@ -129,37 +129,37 @@
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O            &kp P      &kp F12
 &kp LS(LCTRL)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp UP_ARROW    &kp L            &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SLASH  &kp GRAVE
-                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 0
+                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 0
             >;
         };
 
         main_42 {
             bindings = <
-&trans         &trans  &trans  &trans  &trans          &trans                               &trans         &trans  &trans     &trans   &trans     &trans
-&kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                &kp Y          &kp U   &kp I      &kp O    &kp P      &mt MINUS EQUAL
-&kp LG(SPACE)  &kp A   &kp S   &kp D   &kp F           &kp G                                &kp H          &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &trans       &trans       &kp N          &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp ESCAPE
-                               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE    &lt 8 ENTER  &kp BACKSPACE  &mo 8   &trans
+&trans         &trans  &trans  &trans  &trans          &trans                                        &trans         &trans  &trans     &trans   &trans               &trans
+&mt GRAVE TAB  &kp Q   &kp W   &kp E   &kp R           &kp T                                         &kp Y          &kp U   &kp I      &kp O    &kp P                &mt MINUS EQUAL
+&kp LG(SPACE)  &kp A   &kp S   &kp D   &kp F           &mt G LEFT_BRACKET                            &kp H          &kp J   &kp K      &kp L    &kp SEMI             &kp SQT
+&kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B               &trans       &trans       &kp N          &kp M   &kp COMMA  &kp DOT  &mt SLASH BACKSLASH  &kp ESCAPE
+                               &trans  &kp LEFT_SHIFT  &kp LCTRL           &kp SPACE    &lt 8 ENTER  &kp BACKSPACE  &mo 8   &trans
             >;
         };
 
         arrow_42 {
             bindings = <
-&trans     &trans  &trans  &trans  &trans          &trans                                        &trans                 &trans          &trans          &trans           &trans  &trans
-&kp GRAVE  &trans  &trans  &trans  &trans          &kp LEFT_PARENTHESIS                          &kp RIGHT_PARENTHESIS  &kp PG_UP       &kp INS         &kp PAGE_DOWN    &trans  &trans
-&trans     &trans  &trans  &trans  &trans          &kp LEFT_BRACKET                              &kp RIGHT_BRACKET      &kp HOME        &kp UP_ARROW    &kp END          &trans  &trans
-&trans     &trans  &trans  &trans  &trans          &kp LESS_THAN         &trans       &trans     &kp GREATER_THAN       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-                           &trans  &kp LEFT_SHIFT  &kp LCTRL             &kp SPACE    &kp ENTER  &kp DELETE             &trans
+&trans  &trans  &trans  &trans  &trans          &trans                                        &trans                 &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp LEFT_PARENTHESIS                          &kp RIGHT_PARENTHESIS  &kp PG_UP       &kp INS         &kp PAGE_DOWN    &trans  &kp PRINTSCREEN
+&trans  &trans  &trans  &trans  &trans          &kp LEFT_BRACKET                              &kp RIGHT_BRACKET      &kp HOME        &kp UP_ARROW    &kp END          &trans  &kp C_VOLUME_UP
+&trans  &trans  &trans  &trans  &trans          &kp LESS_THAN         &trans       &trans     &kp GREATER_THAN       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_DOWN
+                        &trans  &kp LEFT_SHIFT  &kp LCTRL             &kp SPACE    &kp ENTER  &kp DELETE             &trans
             >;
         };
 
         layer_8 {
             bindings = <
-&trans      &trans        &trans        &trans        &trans          &trans                                &trans        &trans        &trans        &trans        &trans        &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans        &trans        &trans        &trans        &trans        &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5          &kp F6                                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11         &kp F12       &trans       &trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS     &kp EQUAL
-                                        &trans        &kp LEFT_SHIFT  &kp LCTRL     &kp SPACE    &kp ENTER  &to 0         &trans        &trans
+&trans  &trans        &trans        &trans        &trans          &trans                                &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans        &trans        &trans        &trans        &trans        &trans
+&kp F1  &kp F2        &kp F3        &kp F4        &kp F5          &kp F6                                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&kp F7  &kp F8        &kp F9        &kp F10       &kp F11         &kp F12       &trans       &trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS     &kp EQUAL
+                                    &trans        &kp LEFT_SHIFT  &kp LCTRL     &kp SPACE    &kp ENTER  &trans        &trans        &trans
             >;
         };
     };
