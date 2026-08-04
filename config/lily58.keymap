@@ -73,23 +73,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        main_42 {
-            bindings = <
-&trans         &trans  &trans  &trans  &trans          &trans                               &trans         &trans  &trans     &trans   &trans     &trans
-&kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                &kp Y          &kp U   &kp I      &kp O    &kp P      &mt MINUS EQUAL
-&kp LG(SPACE)  &kp A   &kp S   &kp D   &kp F           &kp G                                &kp H          &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &trans       &trans       &kp N          &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp ESCAPE
-                               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE    &lt 7 ENTER  &kp BACKSPACE  &mo 8   &trans
-            >;
-        };
-
         main-layer {
             bindings = <
 &kp ESCAPE     &kp N1  &kp N2  &kp N3  &kp N4          &kp N5                                            &kp N6         &kp N7              &kp N8          &kp N9   &kp N0     &kp EQUAL
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O    &kp P      &kp MINUS
 &kp LG(SPACE)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp K           &kp L    &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M               &kp COMMA       &kp DOT  &kp SLASH  &kp GRAVE
-                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 3 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 4 LEFT_WIN
+                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &lt 2 ENTER        &kp BACKSPACE  &kp K_CONTEXT_MENU  &lt 3 LEFT_WIN
             >;
         };
 
@@ -105,20 +95,20 @@
 
         arrows {
             bindings = <
-&kp PAUSE_BREAK  &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp PG_UP       &kp INS         &kp PAGE_DOWN    &trans     &trans
-&trans           &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans     &trans
-&trans           &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &kp PRINTSCREEN
-&kp RIGHT_ALT    &trans  &trans  &trans        &trans          &trans  &mt LEFT_BRACE LEFT_BRACKET    &mt RIGHT_BRACE RIGHT_BRACKET  &trans      &trans          &trans          &trans           &kp SLASH  &trans
+&kp PAUSE_BREAK  &trans  &trans  &trans        &trans          &trans                                                                &trans      &trans          &trans          &trans           &trans     &trans
+&trans           &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp PG_DN       &kp INS         &kp PAGE_DOWN    &trans     &trans
+&trans           &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans     &kp PRINTSCREEN
+&kp RIGHT_ALT    &trans  &trans  &trans        &trans          &trans  &mt LEFT_BRACE LEFT_BRACKET    &mt RIGHT_BRACE RIGHT_BRACKET  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SLASH  &trans
                                  &kp LEFT_WIN  &kp LEFT_SHIFT  &none   &trans                         &trans                         &kp DELETE  &trans
             >;
         };
 
         power {
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                               &to 1   &trans  &trans  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG
-&bt BT_CLR_ALL  &bt BT_DISC 0      &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                              &to 5   &trans  &trans  &out OUT_USB       &out OUT_BLE      &out OUT_TOG
-&trans          &ext_power EP_ON   &out OUT_BLE   &trans         &trans         &trans                                     &to 6   &trans  &trans  &trans             &trans            &kp C_VOLUME_UP
-&soft_off       &ext_power EP_OFF  &out OUT_USB   &trans         &trans         &trans         &bootloader    &bootloader  &to 0   &trans  &trans  &trans             &trans            &kp C_VOLUME_DOWN
+&bt BT_CLR      &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                               &to 0   &trans  &trans  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG
+&bt BT_CLR_ALL  &bt BT_DISC 0      &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                              &to 4   &trans  &trans  &out OUT_USB       &out OUT_BLE      &out OUT_TOG
+&trans          &ext_power EP_ON   &out OUT_BLE   &trans         &trans         &trans                                     &to 5   &trans  &trans  &trans             &trans            &kp C_VOLUME_UP
+&soft_off       &ext_power EP_OFF  &out OUT_USB   &trans         &trans         &trans         &bootloader    &bootloader  &to 7   &trans  &trans  &trans             &trans            &kp C_VOLUME_DOWN
                                                   &trans         &trans         &trans         &trans         &trans       &trans  &trans  &trans
             >;
         };
@@ -129,7 +119,7 @@
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O            &kp P      &kp MINUS
 &kp LS(LCTRL)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp UP_ARROW    &kp L            &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SLASH  &kp GRAVE
-                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 1
+                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 0
             >;
         };
 
@@ -139,16 +129,26 @@
 &kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                             &kp Y          &kp U               &kp I           &kp O            &kp P      &kp F12
 &kp LS(LCTRL)  &kp A   &kp S   &kp D   &kp F           &kp G                                             &kp H          &kp J               &kp UP_ARROW    &kp L            &kp SEMI   &kp SQT
 &kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SLASH  &kp GRAVE
-                               &mo 2   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 1
+                               &mo 1   &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE           &kp ENTER          &kp BACKSPACE  &kp K_CONTEXT_MENU  &to 0
+            >;
+        };
+
+        main_42 {
+            bindings = <
+&trans         &trans  &trans  &trans  &trans          &trans                               &trans         &trans  &trans     &trans   &trans     &trans
+&kp TAB        &kp Q   &kp W   &kp E   &kp R           &kp T                                &kp Y          &kp U   &kp I      &kp O    &kp P      &mt MINUS EQUAL
+&kp LG(SPACE)  &kp A   &kp S   &kp D   &kp F           &kp G                                &kp H          &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_ALT   &kp Z   &kp X   &kp C   &kp V           &kp B      &trans       &trans       &kp N          &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp ESCAPE
+                               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE    &lt 8 ENTER  &kp BACKSPACE  &mo 8   &trans
             >;
         };
 
         arrow_42 {
             bindings = <
-&trans     &trans  &trans  &trans  &trans          &trans                                        &trans                 &trans          &trans          &trans           &trans         &trans
-&kp GRAVE  &trans  &trans  &trans  &trans          &kp LEFT_PARENTHESIS                          &kp RIGHT_PARENTHESIS  &kp PG_UP       &kp INS         &kp PAGE_DOWN    &trans         &trans
-&trans     &trans  &trans  &trans  &trans          &kp LEFT_BRACKET                              &kp RIGHT_BRACKET      &kp HOME        &kp UP_ARROW    &kp END          &trans         &trans
-&trans     &trans  &trans  &trans  &trans          &laquo                &trans       &trans     &raquo                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LESS_THAN  &kp GREATER_THAN
+&trans     &trans  &trans  &trans  &trans          &trans                                        &trans                 &trans          &trans          &trans           &trans  &trans
+&kp GRAVE  &trans  &trans  &trans  &trans          &kp LEFT_PARENTHESIS                          &kp RIGHT_PARENTHESIS  &kp PG_UP       &kp INS         &kp PAGE_DOWN    &trans  &trans
+&trans     &trans  &trans  &trans  &trans          &kp LEFT_BRACKET                              &kp RIGHT_BRACKET      &kp HOME        &kp UP_ARROW    &kp END          &trans  &trans
+&trans     &trans  &trans  &trans  &trans          &kp LESS_THAN         &trans       &trans     &kp GREATER_THAN       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
                            &trans  &kp LEFT_SHIFT  &kp LCTRL             &kp SPACE    &kp ENTER  &kp DELETE             &trans
             >;
         };
@@ -159,7 +159,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                          &trans        &trans        &trans        &trans        &trans        &trans
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5          &kp F6                                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
 &kp F7      &kp F8        &kp F9        &kp F10       &kp F11         &kp F12       &trans       &trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS     &kp EQUAL
-                                        &trans        &kp LEFT_SHIFT  &kp LCTRL     &kp SPACE    &kp ENTER  &to 1         &trans        &trans
+                                        &trans        &kp LEFT_SHIFT  &kp LCTRL     &kp SPACE    &kp ENTER  &to 0         &trans        &trans
             >;
         };
     };
