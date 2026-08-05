@@ -95,7 +95,7 @@
 
         arrows {
             bindings = <
-&kp PAUSE_BREAK  &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp PG_DN       &kp INS         &kp PAGE_DOWN    &trans     &trans
+&kp PAUSE_BREAK  &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp PG_UP       &kp INS         &kp PAGE_DOWN    &trans     &trans
 &trans           &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans     &trans
 &trans           &trans  &trans  &trans        &trans          &trans                                                                &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &kp PRINTSCREEN
 &kp RIGHT_ALT    &trans  &trans  &trans        &trans          &trans  &mt LEFT_BRACE LEFT_BRACKET    &mt RIGHT_BRACE RIGHT_BRACKET  &trans      &trans          &trans          &trans           &kp SLASH  &trans
