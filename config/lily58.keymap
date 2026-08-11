@@ -168,7 +168,7 @@
         arrow_42 {
             bindings = <
 &trans  &trans  &trans  &trans          &trans             &trans                                     &trans                 &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &kp MINUS       &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS                       &kp RIGHT_PARENTHESIS  &kp PG_UP       &kp INS         &kp PAGE_DOWN    &none   &kp PRINTSCREEN
+&none   &trans  &trans  &kp MINUS       &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS                       &kp RIGHT_PARENTHESIS  &kp PG_UP       &kp INS         &kp PAGE_DOWN    &none   &kp PRINTSCREEN
 &trans  &trans  &trans  &kp EQUAL       &kp DOUBLE_QUOTES  &kp LEFT_BRACKET                           &kp RIGHT_BRACKET      &kp HOME        &kp UP_ARROW    &kp END          &none   &kp C_VOLUME_UP
 &trans  &trans  &trans  &kp UNDERSCORE  &kp QUESTION       &kp LESS_THAN         &trans       &trans  &kp GREATER_THAN       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &kp C_VOLUME_DOWN
                         &trans          &kp LEFT_SHIFT     &kp LCTRL             &kp SPACE    &trans  &kp DELETE             &none
