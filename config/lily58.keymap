@@ -177,10 +177,10 @@
 
         layer_8 {
             bindings = <
-&none  &trans  &trans  &trans  &trans          &trans                             &trans      &trans  &trans          &trans        &trans     &trans
-&none  &none   &kp F7  &kp F8  &kp F9          &kp F10                            &none       &none   &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &trans
-&none  &none   &kp F4  &kp F5  &kp F6          &kp F11                            &none       &none   &none           &none         &none      &none
-&none  &none   &kp F1  &kp F2  &kp F3          &kp F12    &trans       &trans     &to 0       &none   &none           &none         &none      &none
+&none  &trans  &trans  &trans  &trans          &trans                             &trans      &trans  &trans          &trans        &trans              &trans
+&none  &none   &kp F7  &kp F8  &kp F9          &kp F10                            &none       &none   &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL           &trans
+&none  &none   &kp F4  &kp F5  &kp F6          &kp F11                            &none       &none   &none           &kp LEFT_WIN  &kp K_CONTEXT_MENU  &none
+&none  &none   &kp F1  &kp F2  &kp F3          &kp F12    &trans       &trans     &to 0       &none   &none           &none         &none               &none
                        &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE    &kp ENTER  &kp DELETE  &none   &trans
             >;
         };
