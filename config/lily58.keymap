@@ -175,11 +175,11 @@
 
         numers {
             bindings = <
-&trans         &trans  &trans  &trans  &trans          &trans                       &trans  &trans        &trans        &trans        &trans        &trans
-&trans         &trans  &trans  &trans  &trans          &trans                       &trans  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &kp NUMBER_0  &trans
-&trans         &trans  &trans  &trans  &trans          &trans                       &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &trans
-&kp RIGHT_ALT  &trans  &trans  &trans  &trans          &trans     &trans    &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
-                               &trans  &kp LEFT_SHIFT  &kp LCTRL  &trans    &trans  &trans  &trans        &trans
+&trans         &trans  &trans  &trans  &trans          &trans                             &trans  &trans        &trans        &trans        &trans        &trans
+&trans         &trans  &trans  &trans  &trans          &trans                             &trans  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &kp NUMBER_0  &trans
+&trans         &trans  &trans  &trans  &trans          &trans                             &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &trans
+&kp RIGHT_ALT  &trans  &trans  &trans  &trans          &trans     &trans       &trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
+                               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE    &kp ENTER  &none   &trans        &trans
             >;
         };
     };
